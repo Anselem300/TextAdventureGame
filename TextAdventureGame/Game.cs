@@ -6,6 +6,7 @@ class Game
     private Player player;
     private Random random = new Random();
 
+    // Starts the game by initializing the player, setting health, and entering the game loop.
     public void Start()
     {
         player = new Player();
@@ -19,6 +20,7 @@ class Game
         GameLoop();
     }
 
+    // Main game loop that displays options and handles player actions until exit or death.
     private void GameLoop()
     {
         bool running = true;
@@ -54,6 +56,7 @@ class Game
             Console.WriteLine("\nYou have fallen in battle. Game Over.");
     }
 
+    // Simulates exploration with a random event: fight, find item, or nothing happens.
     private void Explore()
     {
         Console.WriteLine("\nYou venture into the wild...");
@@ -64,6 +67,7 @@ class Game
         else Console.WriteLine("Nothing happened during exploration.");
     }
 
+    // Handles a battle between the player and a monster until one is defeated or the player runs away.
     private void FightMonster()
     {
         Monster monster = new Monster
@@ -103,18 +107,21 @@ class Game
         }
     }
 
+    // Gives the player a health potion item and adds it to the inventory.
     private void FindItem()
     {
         Item potion = new Item("Health Potion", 20);
         player.AddItem(potion);
     }
 
+    // Restores a fixed amount of health to the player.
     private void Rest()
     {
         Console.WriteLine("You rest and regain 15 health.");
         player.Health += 15;
     }
 
+    // Saves the current player state (name, health, inventory count) to a text file.
     private void SaveGame()
     {
         string file = "savegame.txt";

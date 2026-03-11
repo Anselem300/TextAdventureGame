@@ -5,6 +5,7 @@ class Player : Character
 {
     public List<Item> Inventory = new List<Item>();
 
+    // Displays the current status of the player including name, health, and inventory count.
     public void ShowStatus()
     {
         Console.WriteLine("\n==== PLAYER STATUS ====");
@@ -14,12 +15,14 @@ class Player : Character
         Console.WriteLine("========================\n");
     }
 
+    // Adds an item to the player's inventory and notifies the player.
     public void AddItem(Item item)
     {
         Inventory.Add(item);
         Console.WriteLine("You received: " + item.Name);
     }
 
+    // Allows the player to select and use an item from their inventory to recover health.
     public void UseItem()
     {
         if (Inventory.Count == 0)
