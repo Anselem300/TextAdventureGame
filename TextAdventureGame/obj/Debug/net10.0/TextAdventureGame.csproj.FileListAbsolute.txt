@@ -12,3 +12,4 @@ C:\Users\USER\Downloads\TextAdventureGame\TextAdventureGame\obj\Debug\net10.0\re
 C:\Users\USER\Downloads\TextAdventureGame\TextAdventureGame\obj\Debug\net10.0\TextAdventureGame.pdb
 C:\Users\USER\Downloads\TextAdventureGame\TextAdventureGame\obj\Debug\net10.0\TextAdventureGame.genruntimeconfig.cache
 C:\Users\USER\Downloads\TextAdventureGame\TextAdventureGame\obj\Debug\net10.0\ref\TextAdventureGame.dll
+C:\Users\USER\Downloads\TextAdventureGame\TextAdventureGame\obj\Debug\net10.0\TextAdventureGame.sourcelink.json
