@@ -17,7 +17,7 @@ TextAdventureGame
 ├── Item.cs # Item struct representing healing items
 └── Character.cs # Abstract class for shared behavior between Player and Monster  
 
-[Software Demo Video](PASTE_YOUR_VIDEO_LINK_HERE)
+[Software Demo Video](https://www.loom.com/share/7ea793975c93428ca0cbf757bd5ac1fc)
 
 
 # Features Demonstrated
